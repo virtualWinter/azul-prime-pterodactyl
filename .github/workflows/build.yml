@@ -3,7 +3,7 @@ name: Build and publish Docker image
 on:
   push:
     branches:
-      - main  # Replace with the branch(es) you want this action to trigger on.
+      - master  # Replace with the branch(es) you want this action to trigger on.
 
 jobs:
   docker:
