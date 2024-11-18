@@ -34,7 +34,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: virtualWinter
+          username: virtualwinter
           password: ${{ secrets.REGISTRY_TOKEN }}
       
       - name: Build and push
@@ -45,4 +45,4 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: |
-            ghcr.io/virtualWinter/azul-prime-pterodactyl:azul-prime_${{ matrix.tag }}
+            ghcr.io/virtualwinter/azul-prime-pterodactyl:azul-prime_${{ matrix.tag }}
